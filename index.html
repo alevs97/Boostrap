@@ -1,0 +1,711 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Metas para la dimension de la pagina-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <!--Maxima compatibilidad para navegadores-->
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <!--Linkear hoja de estilos-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .borde {
+            background-color: gray;
+            height: 200px
+        }
+        
+        .borde1 {
+            background-color: aquamarine;
+            height: 50px;
+            text-align: center;
+        }
+        
+        .borde2 {
+            height: 50px;
+            text-align: center;
+            background-color: olivedrab;
+        }
+        
+        .borde3 {
+            height: 50px;
+            text-align: center;
+            background-color: orangered;
+        }
+    </style>
+
+
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <!--Ocultacion de columnas y tamaños -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sunt quae quod nulla minus pariatur quibusdam mollitia suscipit aspernatur officia, itaque molestias quasi debitis nihil cum similique dolore molestiae excepturi.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-none d-md-block borde1">
+                <p>Uno</p>
+            </div>
+            <div class="col-12 borde2">
+                <p>Dos</p>
+            </div>
+            <div class="col-12  d-none d-md-block borde3">
+                <p>Tres</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sunt quae quod nulla minus pariatur quibusdam mollitia suscipit aspernatur officia, itaque molestias quasi debitis nihil cum similique dolore molestiae excepturi.</p>
+            </div>
+        </div>
+
+        <p>Bienvenido</p>
+        <hr>
+        <hr>
+
+        <!--Alineacion de elementos-->
+        <div class="row ">
+            <div class="col">
+                <div class="float-sm-right"> Uno </div><br>
+                <div class="float-md-right"> Uno </div><br>
+                <div class="float-lg-right"> Uno </div><br>
+                <div class="float-xl-right"> Uno </div><br>
+                <div class="float-none"> Uno </div><br>
+
+            </div>
+        </div>
+        <!--Centrar un elemento-->
+        <div class="row">
+            <div class="mx-auto" style="width: 100px;">
+                Centro
+            </div>
+        </div>
+        <!--Contifucar con #justify-content-center
+            Se puede seleccionar alguna opcion 
+            ++ Consideracion de izquierda y derecha con -> around
+            ++ Alinear vertical ->align-items-center
+            ++ Alinear elementos verticales -> align-self-center
+            #-->
+
+        <div class="row align-content-center justify-content-center borde1" style="height: 300px;">
+            <div class="col-3 borde2">
+                <p>Uno</p>
+            </div>
+            <div class="col-3 borde3">
+                <p>Dos</p>
+            </div>
+            <div class="col-3 borde2">
+                <p>Tres</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 borde2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sit quibusdam, et adipisci obcaecati libero quisquam. Nam tempore neque iste voluptatem, in porro ex fuga molestias sed fugit a voluptatum.
+            </div>
+            <!--
+                ++fixed-top ->  que se quede en la parte superior, funciona con header
+                ++fixed-bottom -> que se quede en la parte inferior de la pagina, funciona con footer
+            -->
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas numquam voluptas tempore ex enim error suscipit dolore officiis nesciunt adipisci provident ratione, dolor quis facere reprehenderit laboriosam velit est.</p>
+            </div>
+        </div>
+        <!--
+            se puede tratar la altura y ancho con:
+                *  w-35 -> manejamos por porcientos(ancho)
+                *  h-35 -> manejamos por porcientos(alto)
+
+        -->
+        <div class="row borde2 w-75 h-75">
+            <div>
+                <!--
+                    con display, vemos un cambio en el tamaño
+                    con estandares
+
+                    con small, modificamo el tamaño a muy pequeño
+
+                    con mark hay un cambio en la marca desl texto
+                
+                    Ya html puede trabajar con abreviacion, listas, entre estos comandos:
+                        + <abbr> -> abreviaciones
+
+                        + <
+                -->
+                <h1> Hola a todos </h1>
+
+                <p><abbr title="Lenguale de marcas de hipertexto">
+                    <!--Marcar abreviaciones como marcar 
+                        lineas punteadas
+                    -->
+                </abbr></p>
+
+                <code>
+                    <!--Para marcar codigo en html
+                        Tambien funciona con pre
+                        para mostrar codigo
+                    -->
+                    print("hola mundo");
+                </code>
+
+                <!--
+                    kbd -> para hacer enlaces o comandos 
+                -->
+                <p>apretar <kbd> crtl c </kbd> para redirigir</p>
+
+
+                <!-- 
+                    Mas con tipografia sombreado 
+                    font-weight-bold -> para marcar en negrita
+                    font-weigth-normal -> para marcar en normal 
+                    font-weight-light -> no se vea marcado, sino suabe
+
+                    font-italic -> para ursiva
+
+                    alineacion ->->
+                        text-left
+                        text-center
+                        text-right
+                        text-justify
+
+                        text-nowrap- > para que sea texto en una linea
+
+                        text-lowercase -> texto en minuscula
+                        text-uppercase -> texto en mayuscula
+                        text-capitalize -> que capitalize la primera letra
+                -->
+
+
+                <p class="font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam tempore accusamus eveniet totam odit deleniti architecto! Odit quis, in hic accusantium excepturi molestiae? Vel voluptas omnis reiciendis? Optio, deserunt!</p>
+                <!-- 
+                    Se puede manejar el margin-top con mt
+                    margin-right con mr 
+                    margin-botton com mb
+                    margin-left con ml
+                    Hay tamaños prestablecidos desde 0 a 5
+                    y tambien aplica con el padding 
+                    Manejamos la tipografia desde clases
+                -->
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quae, fuga tempora earum quisquam voluptas dolor deleniti magni cupiditate quaerat dolorem asperiores quis, maiores ipsam eveniet facilis. Odio, porro quae.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg-primary">
+                <!--
+                    para modificar colores con boostrap 4:
+                     puede ser texto o background
+                     - bg-primary
+                     - bg-secondary
+                     - bg-success
+                     - bg-info
+                     - bg-warning
+                     - bg-danger
+                     - bg-dark
+                     - bg-light
+                    Tambien aplica para texto pero con text en vez de bg
+                -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat natus vel tenetur quas quibusdam nemo sunt impedit nisi, fugiat voluptatibus suscipit officiis numquam quam qui voluptas nihil totam. Consequatur, odit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!--
+                    Uso de tablas 
+                    tr -> fila
+                    td -> columna
+
+                    lineas sobreada
+                    Separadores 
+
+                    Podemos aplicar los mismos colores
+
+                    podemos especificar
+                    table-hover
+                    table-dark -> tabla oscura
+                    table-stripe -> poner sobreados horizontales
+                    
+                    Se puede especificar por tr es decir que sea de un color en especial
+                    o incluso a las columnas
+                    Se puede incluso hacer mas pequeña con table-small
+                    Podemos hacerlo responsibo con el "table-resposive". Y decir desde que tamaño de pantalla es 
+                    responsivo
+
+                -->
+                <table class="table">
+                    <tr>
+                        <td>LUNES</td>
+                        <td>MARTES</td>
+                        <td>MIERCOLES</td>
+                        <td>JUEVES</td>
+                        <td>VIERNES</td>
+                    </tr>
+                    <tr>
+                        <td>LUNES</td>
+                        <td>MARTES</td>
+                        <td>MIERCOLES</td>
+                        <td>JUEVES</td>
+                        <td>VIERNES</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!--Imagenes
+                Adaptar con "fluid"
+                Tambien se puede poner una modificacion de tamaño con w-50
+                Tambien de posicion con float-right o cualquiera
+                Modificar las esquinas de una imagen con
+                "rounded" o como circulo "rounded-circle"
+                Con marco seria "img-thumbnail"
+                -->
+                <img src="img/comparacion_coseno.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!--
+                    Con jumbotron resaltamos textos o contenido.
+                    Tambien podemos hacerlo responsivo con "fluid" e incluso podemos justificarlo
+
+                    podemos usar una class "alert" para hacer una separacion 
+                    como tipo jumbotron
+                    Con alert-link se puede modificar los alert que tengan un link
+
+                -->
+                <p class="alert alert-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim, hic quisquam illo voluptates animi corporis reiciendis earum modi eum possimus, laboriosam harum consequatur nihil facere cupiditate necessitatibus ipsum neque.
+                    <a href="#" class="alert-link">Esto es un link</a></p>
+
+                <!--
+                    Botones
+                    Operaciones especiales con bootstrap
+                -->
+                <p class="alert alert-success alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Felicidades</strong> operacion exitosa
+                </p>
+                <!-- 
+                    Para usar boton en bootstrap
+                    con clase "btn"
+                    Podemos cambiarle de color
+                    Podemos hacerlo con link 
+                    Podemoas manejar contornos con 
+                    btn-outline-success para cuando pasa ensima 
+
+                    Cambiar tamaño con_:
+                        btn-bg
+                        btn-sm
+                    
+                    Poner un boton como blocke con 
+                        btn-block
+
+                    Disabilitar un boton con:
+                        disable
+                    Habilitar un boton con:
+                        active
+                -->
+
+                <!--
+                    Grupo de botonoes con btn-group
+                    Se puede organizar el tamaño : -> btn-group-sm
+                    Horientazion
+                -->
+                <div class="btn-group btn-group-vertical">
+                    <button type="button" class="btn btn-danger btn-outline-success">Boton 1</button>
+                    <button type="button" class="btn btn-danger btn-outline-success">Boton 2</button>
+                    <button type="button" class="btn btn-danger btn-outline-success">Boton 3 </button>
+                    <button type="button" class="btn btn-danger btn-outline-success">Boton 4 </button>
+                    <button type="button" class="btn btn-danger btn-outline-success">Boton 5</button>
+
+                    <!--
+                    Se pueden hacer menus actualizados, es decir que den opciones
+                    
+                -->
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle btn btn-success" data-toggle="dropdown">Sony</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item"> Tablet</a>
+                            <a href="#" class="dropdown-item"> Tablet 1</a>
+                            <a href="#" class="dropdown-item"> Tablet 2</a>
+                            <a href="#" class="dropdown-item"> Tablet 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            Insignias con el fin de resaltar un texto
+            para ello se usa la etiqueta "spam" y la clase "badge"
+            Se puede usar varios tipos de insignias
+        -->
+        <div class="row">
+            <div class="col">
+                <p>
+                    Esto es un ejemplo de <span class="badge badge-pill badge-primary"> ¿pildora</span>
+                </p>
+                <button type="button" class="btn btn-primary">Mensaje <span class="badge badge-light">4</span></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!--
+                    Para hacer una barra de progreso
+                    Se puede manejar las barras de progreso, para eso es necesario en usarlo en un div
+                    Se puede especificar el ancho o alto.
+                    Incluso se puede especificar el porciento que falta
+                    Espeficamos el colo con el "backgorund".
+                    Sepuede animar las barras con "progress-bar-animated"
+                -->
+                <div class="progress">
+                    <div class="progress-bar bg-dark w-75 progress-bar-striped progress-bar-animated">50%</div>
+                    <div class="progress-bar bg-secondary w-50 progress-bar-striped progress-bar-animated">30%</div>
+                    <div class="progress-bar bg-warning w-25 progress-bar-striped progress-bar-animated">20%</div>
+                </div>
+            </div>
+            <div class="col-12">
+                <!--
+                    Paginacion cuando hay muchos post
+                    Para ello se usa la etiqueta "li" y la etiqueta "a".
+                    Se axili bien con php
+                    En li->especifica que es una paginacion con ="page-item"
+                    En a ->especifca con = "page-link"
+                    Podemos especificar cuales estan activas o desactivas con 
+                    active y desabled.
+                    La paginacion debe de esta en etiqueta "ul"
+                    Se puede especificar tamaños igual
+                -->
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item disabled"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                </ul>
+                <!--
+                    Otra forma de navegacion es con las migas de pan 
+                    "breadcrumb".
+                    Teieni ligeras excepciones con paginacion
+                -->
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">1</a></li>
+                    <li class="breadcrumb-item"><a href="#">2</a></li>
+                    <li class="breadcrumb-item"><a href="#">3</a></li>
+                    <li class="breadcrumb-item"><a href="#">4</a></li>
+                    <li class="breadcrumb-item"><a href="#">5</a></li>
+                    <li class="breadcrumb-item"><a href="#">Sigueinte</a></li>
+                </ul>
+                <!--
+                    Manejo de listas en Boostrap
+                    Se puede activar y desactivar, esto resalte o no 
+                    Con "list-grop-item" podemos definir el color de fondo 
+                -->
+                <ul class="list-group">
+                    <li class="list-group-item disabled">Lunes</li>
+                    <li class="list-group-item">Martes</li>
+                    <li class="list-group-item">Miercoles</li>
+                    <li class="list-group-item">Jueves</li>
+                    <li class="list-group-item">Viernes</li>
+                </ul>
+                <!-- 
+                    Cuando queramos usar los links de una clase.
+                    Se agrupan los links con "list-group".
+                    Se puede manejar tanto con "a" y "li"
+                -->
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-danger">Primero</a>
+                    <a href="#" class="list-group-item list-group-item-dark">Segundo</a>
+                    <a href="#" class="list-group-item">Tercero</a>
+                </div>
+
+                <!--
+                    Uso de tarjetas novedad en boostrap 4.
+                    Partes de una tarjeta
+                    * header
+                    * body 
+                    * footer
+                    Brindan una funcionalidad de presentar el perfil de una persona
+                
+                -->
+                <div class="card w-50">
+                    <div class="card-header">
+                        <p>Administrador</p>
+                    </div>
+                    <img src="img/trian.png">
+                    <div class="card-body">
+                        <h3 class="card-title">Alejandro Viveros</h3>
+                        <p class="card-text">Esta es la descripcion de la persona que figura en la parte superior</p>
+                        <a href="#" class="btn btn-primary">VER PERFIL</a>
+                    </div>
+                    <div class="card-footer bg-dark">
+                        <p>Esta es un pie de tarjeta</p>
+                    </div>
+                </div>
+
+                <!--
+                    Menus desplegables con "dropdown"
+                    Menus desplegables
+                -->
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">desplegables</button>
+
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">Grupo uno</div>
+                        <a href="" class="dropdown-item">Link 1</a>
+                        <a href="" class="dropdown-item">Link 2</a>
+                        <a href="" class="dropdown-item">Link 3</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">Grupo dos</div>
+                        <a href="" class="dropdown-item">Link 1</a>
+                        <a href="" class="dropdown-item">Link 2</a>
+                        <a href="" class="dropdown-item">Link 3</a>
+                    </div>
+                </div>
+
+                <!-- Para generar contenido desplegable
+                Para mostrar informacion
+            
+                Organizar de manera mas compacta el contenido
+                Asi desplegamos por el "id"
+
+                Para hacer estos menus desplegables se puede usar tambien "a", para linkear la info 
+            -->
+                <div class="row">
+                    <div class="col-12">
+                        <button data-toggle="collapse" data-target="#uno">Primero</button>
+                        <div id="uno" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente in tempora saepe facilis aspernatur illum possimus quia iusto vitae consequatur aliquam soluta amet rem, culpa doloribus maxime obcaecati aliquid.</div>
+
+                        <button data-toggle="collapse" data-target="#dos">Segundo</button>
+                        <div id="dos" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente in tempora saepe facilis aspernatur illum possimus quia iusto vitae consequatur aliquam soluta amet rem, culpa doloribus maxime obcaecati aliquid.</div>
+
+                        <button data-toggle="collapse" data-target="#tres">Tercero</button>
+                        <div id="tres" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente in tempora saepe facilis aspernatur illum possimus quia iusto vitae consequatur aliquam soluta amet rem, culpa doloribus maxime obcaecati aliquid.</div>
+
+                    </div>
+                </div>
+
+                <!--
+                    Arcodeon
+                    para desplegar contenido. Similar a las tarjetas
+
+                -->
+                <div id="acordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#uno_1" class="card-link" data-toggle="collapse" data-parent="#acordion">uno</a>
+                        </div>
+                        <div class="collapse show" id="uno_1">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A corrupti sit asperiores officia eligendi eos dolor porro numquam doloremque blanditiis ducimus quibusdam, repellat labore, nemo minus tenetur impedit culpa. Autem!
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    Menus de navegacion 
+                    Para ello podemos auxiliarnos de una etiqueta de "lista"->"ul"
+                    Podemoa acomodar por columna con -> "flex-column"
+                    Se puede cambiar el color en el "a".
+
+                    Se pueden anidar submenus 
+                    con la clase "dropdown"
+                -->
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-justified flex-column nav-pills">
+                            <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link btn-danger">Link 2</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+                            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Link 4</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Submenu 1</a>
+                                    <a href="#" class="dropdown-item">Submenu 2</a>
+                                    <a href="#" class="dropdown-item">Submenu 3</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+                    Menu de navegacion dos. COn navbar
+                    Podemos extablecer que tanto se vea, de acuerdo a la configuracion del tamaño.
+                    Que sea desplegable o no, si se hace despegable podemos generar un boton de esa manera.
+                    Podemos agregar submenus de estas manera, mediante agregar un "div que nos de esta funcionalidad"
+
+                -->
+                <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+                    <a href="#" class="navbar-brand"><img src="img/coseno.png" style="width:100px;" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#uno_2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="uno_2">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbardrop">Link 3</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Sub item 1</a>
+                                    <a href="#" class="dropdown-item">Sub item 2</a>
+                                    <a href="#" class="dropdown-item">Sub item 3</a>
+                                </div>
+                            </li>
+                            <li>
+                                <form action="miformulario.php" method="post" class="form-inline">
+                                    <input type="text" placeholder="Buscar" class="form-control mr-sm-2">
+                                    <button class="btn btn-success" type="submit">Buscar</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--
+                    Manejo de formularios
+                    Con la clases d"form-control" estamos usando boostrap 4 en el formulario.
+                    Podemos agregar mucho elementos de HTML5.
+                    Se puede usar checkbox, un radio button.
+                    Podemos agregar un radio button con el div para la posicion de los elementos.
+                    Solo hay que especificar que la clase es un "radio".
+                    Podemos manejar opciones, con el select
+                -->
+                <div class="row">
+                    <div class="col-12">
+                        <form action="procesos.php" method="POST">
+                            <label for="nombre">nombre</label><input type="text" id="nombre" class="form-control">
+                            <label for="email">email</label><input type="email" id="email" class="form-control">
+                            <label for="tiempo">Fcha</label><input type="datetime" id="tiempo" class="form-control">
+                            <label for="color">Color</label><input type="color" id="color" class="form-control">
+                            <label for="contraseña">Contraseña</label><input type="password" id="contraseña" class="form-control">
+                            <label for="radio-inline"><input type="radio" name="gustos"> Television</label>
+                            <label for="radio-inline"><input type="radio" name="gustos"> Radio</label>
+                            <label for="radio-inline"><input type="radio" name="gustos"> Internet</label>
+
+                            <select name="dias">
+                                <option value="lunes">Lunes</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miercoles</option>
+                            </select>
+
+                            <div class="form-check">
+                                <label for="dos" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Opcion 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label for="dos" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Opcion 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label for="dos" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Opcion 3
+                                </label>
+                            </div>
+
+                            <label for="submit" value="ENVIAR"><input type="submit" value="ENVIAR" class="btn btn-primary"></label>
+                        </form>
+                    </div>
+                </div>
+                <!--
+                    Uso de slideshow
+                    Se usa para mostrar imagenes
+                    Se divide en tres grupos:
+                    * Inidcadores: Cuando una imagen aparece
+                    * Imagenes: 
+                    * Controles izq y der:
+
+                    Hay que hacer que las imagenes sean adaptables con el img-fluid, para que no se salga del navegador
+
+                -->
+                <div class="row">
+                    <div class="col-12">
+                        <div id="demo" class="carousel" data-ride="carousel">
+                            <!--Indicadores-->
+                            <ul class="carousel-indicators">
+                                <li data-target="demo" data-slide-to="0" class="active"></li>
+                                <li data-target="demo" data-slide-to="1"></li>
+                                <li data-target="demo" data-slide-to="2"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/comparacion_coseno.png" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Primer titulo</h3>
+                                        <p>Esta es la descripcion de la imagen</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/comparacion_trian.png" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Segundo titulo</h3>
+                                        <p>Esta es la descripcion de la imagen</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/coseno.png" class="img-fluid">
+                                    <div class="carousel-caption">
+                                        <h3>Tercer titulo</h3>
+                                        <p>Esta es la descripcion de la imagen</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#demo" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                            <a href="#demo" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    Uso de modal en la parte superior usado por JS
+                    Para poder pedir alguna accion en especial.
+                    Hay que especificar y tener un orden en el modal ="modal"
+
+                -->
+                <div>
+                    <!--Boton para accionar modal-->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mimodal">Consulta</button>
+                    <!--El modal-->
+                    <div class="modal fade" id="mimodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!--Cabecera-->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Cabecera del modal</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!--Cuerpo-->
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quas optio cumque sapiente voluptate facere recusandae velit eos placeat deserunt aliquid impedit molestiae aliquam vitae officiis consequatur inventore doloremque cupiditate.
+                                </div>
+                                <!--Pie de modal-->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Uso de tooltips
+                    Para poder dar informaciond e un elemento o redireccion.
+                    Se puede poner a una spam 
+                -->
+                <a href="#" data-toggle="tooltip" tite="Es es un tooltip"></a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
